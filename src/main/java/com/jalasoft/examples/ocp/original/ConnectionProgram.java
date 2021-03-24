@@ -28,5 +28,8 @@ public final class ConnectionProgram {
         String connectionURL = urlBuilder.getConnectionURL(serverData, DatabaseType.MYSQL);
 
         // Rest of the logic to connect database.
+//        String connectionURL = urlBuilder.getConnectionURL(serverData, DatabaseType.SQL_SERVER);
+//
+//        String connectionURL = urlBuilder.getConnectionURL(serverData, DatabaseType.ORACLE);
     }
 }

@@ -10,6 +10,10 @@ repositories {
     mavenCentral()
 }
 
+checkstyle {
+    toolVersion = '8.40'
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
 }

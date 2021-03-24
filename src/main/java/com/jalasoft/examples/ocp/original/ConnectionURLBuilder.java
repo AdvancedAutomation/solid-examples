@@ -13,21 +13,21 @@ public class ConnectionURLBuilder {
      * @return connection URL.
      */
     public String getConnectionURL(final DatabaseServer databaseServer, final DatabaseType databaseType) {
-        if (databaseType.equals(DatabaseType.ORACLE)) {
+        if (DatabaseType.ORACLE.equals(databaseType)) {
             return String.format("jdbc:oracle:thin:%s/%s@%s:%s:%s",
                     databaseServer.getUsername(),
                     databaseServer.getPassword(),
                     databaseServer.getHost(),
                     databaseServer.getPort(),
                     databaseServer.getDatabaseName());
-        } else if (databaseType.equals(DatabaseType.MYSQL)) {
+        } else if (DatabaseType.MYSQL.equals(databaseType)) {
             return String.format("jdbc:mysql://%s:%s@%s:%s/%s",
                     databaseServer.getUsername(),
                     databaseServer.getPassword(),
                     databaseServer.getHost(),
                     databaseServer.getPort(),
                     databaseServer.getDatabaseName());
-        } else if (databaseType.equals(DatabaseType.SQL_SERVER)) {
+        } else if (DatabaseType.SQL_SERVER.equals(databaseType)) {
             return String.format("jdbc:sqlserver://%s:%s;databaseName=%s;user=%s;password=%s",
                     databaseServer.getHost(),
                     databaseServer.getPort(),
