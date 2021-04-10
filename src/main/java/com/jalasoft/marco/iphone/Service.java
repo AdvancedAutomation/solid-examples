@@ -8,14 +8,14 @@ import com.jalasoft.marco.iphone.services.IService;
  */
 public class Service {
 
-    IService service;
+    private IService service;
 
     /**
      * Initializes an instance of Service class.
      *
-     * @param service instance of service
+     * @param service instance of service.
      */
-    public Service(IService service) {
+    public Service(final IService service) {
         this.service = service;
     }
 

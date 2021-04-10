@@ -10,10 +10,10 @@ public class Upgrade implements IService {
     private final double price;
 
     /**
-     * Constructor of CPU class
+     * Constructor of CPU class.
      *
-     * @param version a version to upgrade
-     * @param price the price of the upgrade
+     * @param version a version to upgrade.
+     * @param price the price of the upgrade.
      */
     public Upgrade(final String version, final double price) {
         this.version = version;

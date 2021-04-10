@@ -8,12 +8,13 @@ public class CPU implements IComponents {
 
     private final String type;
     private final double price;
+    private static final String CPU_NAME = "CPU";
 
     /**
-     * Constructor o CPU class
+     * Constructor o CPU class.
      *
-     * @param type the type of the CPU
-     * @param price the price of the CPU
+     * @param type the type of the CPU.
+     * @param price the price of the CPU.
      */
     public CPU(final String type, final double price) {
         this.type = type;
@@ -33,6 +34,6 @@ public class CPU implements IComponents {
      */
     @Override
     public String getComponents() {
-        return String.format("%s = %s", "CPU", type);
+        return String.format("%s = %s", CPU_NAME, type);
     }
 }

@@ -9,13 +9,14 @@ public class Camera implements IComponents {
     private final String type;
     private final String megapixels;
     private final double price;
+    private static final String CAMERA_NAME = "Camera";
 
     /**
-     * Constructor o Camera class
+     * Constructor o Camera class.
      *
-     * @param type of the Camera
-     * @param megapixels the megapixels of the camera
-     * @param price the price of the camera
+     * @param type of the Camera.
+     * @param megapixels the megapixels of the camera.
+     * @param price the price of the camera.
      */
     public Camera(final String type, final String megapixels, final double price) {
         this.type = type;
@@ -36,6 +37,6 @@ public class Camera implements IComponents {
      */
     @Override
     public String getComponents() {
-        return String.format("%s = %s, %s = %s", "Camera", type, "Resolution", megapixels);
+        return String.format("%s = %s, %s = %s", CAMERA_NAME, type, "Resolution", megapixels);
     }
 }

@@ -9,13 +9,14 @@ public class Ram implements IComponents {
     private final String type;
     private final String size;
     private final double price;
+    private static final String RAM_NAME = "Ram";
 
     /**
-     * Constructor o Ram class
+     * Constructor o Ram class.
      *
-     * @param type the type of Ram
-     * @param size the size of Ram
-     * @param price the price of Ram
+     * @param type the type of Ram.
+     * @param size the size of Ram.
+     * @param price the price of Ram.
      */
     public Ram(final String type, final String size, final double price) {
         this.type = type;
@@ -36,6 +37,6 @@ public class Ram implements IComponents {
      */
     @Override
     public String getComponents() {
-        return String.format("%s = %s, %s = %s", "RAM", type, "Size", size);
+        return String.format("%s = %s, %s = %s", RAM_NAME, type, "Size", size);
     }
 }

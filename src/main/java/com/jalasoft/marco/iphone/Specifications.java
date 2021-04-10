@@ -7,27 +7,27 @@ import java.util.List;
 
 /**
  * Defines the specifications of Iphone.
- * Applying Single Responsibility and Dependency Inversion
+ * Applying Single Responsibility and Dependency Inversion.
  */
 public class Specifications {
 
-    List<IComponents> specifications = new ArrayList<>();
+    private List<IComponents> specifications = new ArrayList<>();
 
     /**
-     * Adds a component to a list
+     * Adds a component to a list.
      *
-     * @param component instance of component
+     * @param component instance of component.
      */
-    public void set_Specification(IComponents component) {
+    public void setSpecification(final IComponents component) {
         specifications.add(component);
     }
 
     /**
-     * Gets the list of components
+     * Gets the list of components.
      *
-     * @return
+     * @return list of specifications
      */
-    public List<IComponents> get_Specifications() {
+    public List<IComponents> getSpecifications() {
         return specifications;
     }
 }

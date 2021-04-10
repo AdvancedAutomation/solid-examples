@@ -10,10 +10,10 @@ public class Downgrade implements IService {
     private final double price;
 
     /**
-     * Constructor of Downgrade class
+     * Constructor of Downgrade class.
      *
-     * @param version a version to downgrade
-     * @param price the price of the downgrade
+     * @param version a version to downgrade.
+     * @param price the price of the downgrade.
      */
     public Downgrade(final String version, final double price) {
         this.version = version;

@@ -7,27 +7,27 @@ package com.jalasoft.marco.iphone;
 public class Calculate {
 
     private final Specifications specifications;
-    private double TOTAL_AMOUNT = 0;
+    private double totalAmount = 0;
 
     /**
-     * Initialize and instance of Calculate class
+     * Initialize and instance of Calculate class.
      *
-     * @param specifications instance of Specifications
+     * @param specifications instance of Specifications.
      */
-    public Calculate(Specifications specifications) {
+    public Calculate(final Specifications specifications) {
         this.specifications = specifications;
     }
 
     /**
-     * Calculates the total amount of specifications
+     * Calculates the total amount of specifications.
      *
-     * @return the total amount
+     * @return the total amount.
      */
     public double calculateTotalAmount() {
-        for (var specification: specifications.get_Specifications()) {
-            TOTAL_AMOUNT += specification.getPrice();
+        for (var specification: specifications.getSpecifications()) {
+            totalAmount += specification.getPrice();
         }
 
-        return TOTAL_AMOUNT;
+        return totalAmount;
     }
 }
