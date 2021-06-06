@@ -23,7 +23,7 @@ public class IPhone {
 
     private IUpdate update;
 
-    public IPhone(IModel modelName, AbstractCPU processor, ICamera camera) {
+    public IPhone(final IModel modelName, final AbstractCPU processor, final ICamera camera) {
         this.modelName = modelName;
         this.processor = processor;
         this.camera = camera;
